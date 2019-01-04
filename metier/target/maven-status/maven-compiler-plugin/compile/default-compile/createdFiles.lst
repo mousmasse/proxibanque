@@ -1,0 +1,8 @@
+sn\objis\proxibanque\metier\LogTransactions.class
+sn\objis\proxibanque\metier\Agence.class
+sn\objis\proxibanque\metier\Client.class
+sn\objis\proxibanque\metier\Transactioncmpt.class
+sn\objis\proxibanque\metier\Personnel.class
+sn\objis\proxibanque\metier\CompteEpargne.class
+sn\objis\proxibanque\metier\CompteCourant.class
+sn\objis\proxibanque\metier\Carte.class
