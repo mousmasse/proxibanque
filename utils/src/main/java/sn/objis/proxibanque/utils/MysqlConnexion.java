@@ -3,12 +3,16 @@
  */
 package sn.objis.proxibanque.utils;
 
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+
 
 /**
  * Classe MysqlConnexion 
@@ -16,18 +20,29 @@ import org.apache.logging.log4j.Logger;
  * @version 0.0.1-SNAPSHOT
  * @since 02/01/2019 
  */
-public class MysqlConnexion {
+public class MysqlConnexion{
 	
 	static final Logger log = LogManager.getLogger(MysqlConnexion.class.getName());
-	/*
 	ClassLoader classloader = Thread.currentThread().getContextClassLoader();
 	InputStream doc = classloader.getResourceAsStream("connection.properties");
-	 BufferedReader reader = new BufferedReader(new InputStreamReader(doc));
-     StringBuilder out = new StringBuilder();
-     String line
-     while ((line = reader.readLine()) != null) {
-         out.append(line);
-     }*/
+	
+	/*try {
+		String result = IOUtils.toString(doc, StandardCharsets.UTF_8);
+	}catch (IOException ex) {
+	       log.error(ex.getMessage());
+	    } finally {
+	       
+	    }*/
+	
+/*	String fileName = "connection.properties";
+	//read file into stream, try-with-resources
+			try(Stream<String> stream = Files.lines(Paths.get(fileName))) {
+				stream.forEach(System.out::println);
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}*/
+			
 	
 	private static  String url="jdbc:mysql://localhost/gestionscolaire?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	private static String userBd = "root";

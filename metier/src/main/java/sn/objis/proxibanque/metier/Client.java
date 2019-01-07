@@ -59,6 +59,140 @@ public class Client {
 		this.conseiller = conseiller;
 	}
 	
+	
+	
+	/**
+	 * @return the idClient
+	 */
+	public long getIdClient() {
+		return idClient;
+	}
+	/**
+	 * @param idClient the idClient to set
+	 */
+	public void setIdClient(long idClient) {
+		this.idClient = idClient;
+	}
+	/**
+	 * @return the nomClient
+	 */
+	public String getNomClient() {
+		return nomClient;
+	}
+	/**
+	 * @param nomClient the nomClient to set
+	 */
+	public void setNomClient(String nomClient) {
+		this.nomClient = nomClient;
+	}
+	/**
+	 * @return the prenomClient
+	 */
+	public String getPrenomClient() {
+		return prenomClient;
+	}
+	/**
+	 * @param prenomClient the prenomClient to set
+	 */
+	public void setPrenomClient(String prenomClient) {
+		this.prenomClient = prenomClient;
+	}
+	/**
+	 * @return the emailClient
+	 */
+	public String getEmailClient() {
+		return emailClient;
+	}
+	/**
+	 * @param emailClient the emailClient to set
+	 */
+	public void setEmailClient(String emailClient) {
+		this.emailClient = emailClient;
+	}
+	/**
+	 * @return the adresseClient
+	 */
+	public String getAdresseClient() {
+		return adresseClient;
+	}
+	/**
+	 * @param adresseClient the adresseClient to set
+	 */
+	public void setAdresseClient(String adresseClient) {
+		this.adresseClient = adresseClient;
+	}
+	/**
+	 * @return the ville
+	 */
+	public String getVille() {
+		return ville;
+	}
+	/**
+	 * @param ville the ville to set
+	 */
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+	/**
+	 * @return the codePostalClient
+	 */
+	public int getCodePostalClient() {
+		return codePostalClient;
+	}
+	/**
+	 * @param codePostalClient the codePostalClient to set
+	 */
+	public void setCodePostalClient(int codePostalClient) {
+		this.codePostalClient = codePostalClient;
+	}
+	/**
+	 * @return the telephone
+	 */
+	public int getTelephone() {
+		return telephone;
+	}
+	/**
+	 * @param telephone the telephone to set
+	 */
+	public void setTelephone(int telephone) {
+		this.telephone = telephone;
+	}
+	/**
+	 * @return the profession
+	 */
+	public String getProfession() {
+		return profession;
+	}
+	/**
+	 * @param profession the profession to set
+	 */
+	public void setProfession(String profession) {
+		this.profession = profession;
+	}
+	/**
+	 * @return the agence
+	 */
+	public Agence getAgence() {
+		return agence;
+	}
+	/**
+	 * @param agence the agence to set
+	 */
+	public void setAgence(Agence agence) {
+		this.agence = agence;
+	}
+	/**
+	 * @return the conseiller
+	 */
+	public Personnel getConseiller() {
+		return conseiller;
+	}
+	/**
+	 * @param conseiller the conseiller to set
+	 */
+	public void setConseiller(Personnel conseiller) {
+		this.conseiller = conseiller;
+	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
