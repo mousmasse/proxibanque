@@ -3,7 +3,10 @@
  */
 package sn.objis.proxibanque.dao;
 
+import java.util.List;
+
 import sn.objis.proxibanque.metier.CompteCourant;
+import sn.objis.proxibanque.metier.Personnel;
 
 /**
  * Interface IDaoCompteCourant 
@@ -13,4 +16,5 @@ import sn.objis.proxibanque.metier.CompteCourant;
  */
 public interface IDaoCompteCourant extends IDaoGenerique<CompteCourant> {
 
+	public List<CompteCourant> lire(Personnel personnel);
 }

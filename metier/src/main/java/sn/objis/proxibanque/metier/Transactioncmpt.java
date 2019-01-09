@@ -4,7 +4,7 @@
 package sn.objis.proxibanque.metier;
 
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 /**
  * Classe Transactioncmpt 
@@ -16,13 +16,13 @@ import java.time.LocalDateTime;
 public class Transactioncmpt {
 
 	 private long numeroTransaction;
-	 private LocalDateTime dateTransaction;
+	 private LocalDate dateTransaction;
 	 private double montantTransaction;
 	 private String typeOperation;
 	 private long numeroComptDebiteur;
 	 private long numeroCompteCrediteur;
-	 private long numeroCompteCourant;
-	 private long numeroCompteEpargne;
+	 private long numeroCompteCourant = 0;
+	 private long numeroCompteEpargne = 0;
 	
 	/**
 	 * Constructeur sans paramètre
@@ -42,7 +42,7 @@ public class Transactioncmpt {
 	 * @param numeroCompteCourant
 	 * @param numeroCompteEpargne
 	 */
-	public Transactioncmpt(long numeroTransaction, LocalDateTime dateTransaction, double montantTransaction,
+	public Transactioncmpt(long numeroTransaction, LocalDate dateTransaction, double montantTransaction,
 			String typeOperation, long numeroComptDebiteur, long numeroCompteCrediteur, long numeroCompteCourant,
 			long numeroCompteEpargne) {
 		super();
@@ -73,14 +73,14 @@ public class Transactioncmpt {
 	/**
 	 * @return the dateTransaction
 	 */
-	public LocalDateTime getDateTransaction() {
+	public LocalDate getDateTransaction() {
 		return dateTransaction;
 	}
 
 	/**
 	 * @param dateTransaction the dateTransaction to set
 	 */
-	public void setDateTransaction(LocalDateTime dateTransaction) {
+	public void setDateTransaction(LocalDate dateTransaction) {
 		this.dateTransaction = dateTransaction;
 	}
 

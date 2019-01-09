@@ -12,5 +12,7 @@ import sn.objis.proxibanque.metier.LogTransactions;
  * @since 02/01/2019 
  */
 public interface IDaoLogTransactions extends IDaoGenerique<LogTransactions> {
+	
+	public void transferer();
 
 }
